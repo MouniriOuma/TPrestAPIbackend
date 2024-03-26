@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.ws</groupId>
-  <artifactId>TPrestAPI</artifactId>
+  <artifactId>TPrestAPI_backend</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>TPrestAPI</name>
   <packaging>war</packaging>
@@ -35,7 +35,31 @@
         <artifactId>junit-jupiter-engine</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
-      </dependency>      </dependencies>
+      </dependency>
+
+      <dependency>
+          <groupId>org.glassfish.jersey.containers</groupId>
+          <artifactId>jersey-container-servlet</artifactId>
+          <version>3.1.5</version>
+      </dependency>
+      <dependency>
+          <groupId>jakarta.servlet</groupId>
+          <artifactId>jakarta.servlet-api</artifactId>
+          <version>6.0.0</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.inject</groupId>
+          <artifactId>jersey-hk2</artifactId>
+          <version>3.1.5</version>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.media</groupId>
+          <artifactId>jersey-media-json-jackson</artifactId>
+          <version>3.1.5</version>
+      </dependency>
+
+  </dependencies>
 
   <build>
         <plugins>
